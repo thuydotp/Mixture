@@ -1,0 +1,17 @@
+.nav-header {
+    background-color: #232c32;
+    text-align: right;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    display: inline-block;
+    
+}
+
+.nav-header a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
