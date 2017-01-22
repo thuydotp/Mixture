@@ -1,16 +1,23 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #20B2AA;
+.full-container{
+    background-color: pink;    
+    height: 100vh;
+}
+.navbar{
+    background-color: cadetblue;
+    height: 50px;
 }
 
-li {
-    float: left;
+.body-container{
+    /*background-color: chartreuse;*/
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-li a, .dropdown-button {
+.navbar a {
+    text-decoration: none;    
     display: inline-block;
     color: white;
     text-align: center;
@@ -18,18 +25,41 @@ li a, .dropdown-button {
     text-decoration: none;
 }
 
+.nav {
+    list-style: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+.nav-header{
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
 li a:hover, .dropdown:hover .dropdown-button {
-    background-color: azure;
+    background-color: #f9f9f9;
     color:cadetblue;
 }
 
-li.dropdown {
-    display: inline-block;
+.dropdown{
+    position: relative;
 }
-
 .dropdown-content {
-    display: none;
+    top:50px;
+    display: none;    
+    z-index: 9999;
     position: absolute;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -44,30 +74,10 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-     background-color: #e9fbfa;
+     background-color: darkcyan;
+     color: white;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown.user-profile{
-    float: right;
-}
-
-
-
-/*-------------------------*/
-
-
-.full-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: pink;
-}
-
-.body-container{
-    background: yellowgreen;
-    flex: 1;
 }

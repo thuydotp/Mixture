@@ -1,33 +1,39 @@
 <div class="full-container">
+    <!--Top Navigation-->
+    <nav class="navbar">
+        <div class="nav-header">           
+            <a routerLink="/admin" routerLinkActive="active">Mixture - Admin</a>
+            <button class="nav-toggle">
+                <span>&#9776;</span>
+            </button>
+        </div>
+        <ul class="nav navbar-right">
+            <li><a routerLink="/accounts" routerLinkActive="active">Accounts</a></li>            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-button">
+                    Musik <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Songs</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Albumns</a>
+                    <a href="#">Artists</a>
+                </div>
+            </li>
+            <li><a routerLink="/config" routerLinkActive="active">Global Settings</a></li>
+            <li class="dropdown user-profile">
+                <a href="javascript:void(0)" class="dropdown-button">
+                    Anita Do <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="body-container">
 
-    <ul class="nav">
-        <li><a routerLink="/admin" routerLinkActive="active">Admin App</a></li>
-        <li><a routerLink="/accounts" routerLinkActive="active">Accounts</a></li>
-        <li><a routerLink="/musik" routerLinkActive="active">Musik</a></li>
-        <li><a routerLink="/config" routerLinkActive="active">Global Settings</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-button">
-                Musik <i class="fa fa-caret-down" aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-content">
-                <a href="#">Songs</a>
-                <a href="#">Videos</a>
-                <a href="#">Albumns</a>
-                <a href="#">Artists</a>
-            </div>
-        </li>
-        <li class="dropdown user-profile">
-            <a href="javascript:void(0)" class="dropdown-button">
-                Anita Do <i class="fa fa-caret-down" aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-content">
-                <a href="#">Profile</a>
-                <a href="#">Settings</a>
-                <a href="#">Sign Out</a>
-            </div>
-        </li>
-    </ul>
-    <section class="body-container">
-
-    </section>
+    </div>
 </div>
