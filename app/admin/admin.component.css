@@ -1,9 +1,9 @@
 .full-container{
-    background-color: pink;    
     height: 100vh;
+    background-color: #f6fcfb;
 }
 .navbar{
-    background-color: cadetblue;
+    background-color: #020605;
     height: 50px;
 }
 
@@ -14,6 +14,11 @@
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.container{
+    height: 100%;
+    padding: 15px;
 }
 
 .navbar a {
@@ -47,20 +52,21 @@ li {
 }
 
 li a:hover, .dropdown:hover .dropdown-button {
-    background-color: #f9f9f9;
-    color:cadetblue;
+    background-color: #1f5f54;
+    color:white;
 }
 
 .dropdown{
     position: relative;
 }
+
 .dropdown-content {
     top:50px;
     display: none;    
     z-index: 9999;
     position: absolute;
     right: 0;
-    background-color: #f9f9f9;
+    background-color: #f6fcfb;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -74,10 +80,29 @@ li a:hover, .dropdown:hover .dropdown-button {
 }
 
 .dropdown-content a:hover {
-     background-color: darkcyan;
+     background-color: #ace4db;
      color: white;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*---------------------Panel---------------------*/
+.panel {
+    /*background-color: #e7f7f5;*/
+    background-color: bisque;
+    border: 1px solid #f2f4f8;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.panel-heading {
+    padding: 10px 15px;
+    border: 1px solid #f2f4f8;
+}
+.panel-search-filter {
+    padding: 15px;
+    border: 1px solid #f2f4f8;
+}
+.panel-body {
+    border: 1px solid #f2f4f8;
 }
